@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!--in questa pagina chi progetta il test può stabilire una serie di parametri ben dettagliati, scegliendoli con un crto criterio -->
+
+<head>
+  <!-- si apre il blocco  di testa-->
+  <meta charset="utf-8" />
+  <!-- permette di scrivere i caratteri accentati-->
+  <title>AffectiveImmage</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!--di seguito vengono fatti i soliti richiami alle librerie boostrap e ai file javascript -->
+  <script src="../js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- da qui iniziano una serie dil ibrerie che servono per far comparire i pop-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<!--inizio del blocco di testa -->
+
+<body onload="saveState(1)">
+  <!-- viene richiamata la funzìone save state per il salvataggio -->
+  <div class="container">
+    <!--blocchi per la realizzazione dei contener centrale -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Affective Immage</a>
+          <!--questo pspecificlo blocco crea un conteiner in alto dove viene contenuto il titolo del test -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <h2>IMPOSTAZIONI </h2>
+      <!--titolo della pagina -->
+      <br>
+      <!--si lascia una spazio sotto al titolo nper non rendere tutto compatto nella realizzazione grafica-->
+      <div class="form-group row">
+        <!-- da qui inizia la scheda di compilazione delle imposazioni-->
+        <!-- il progettista inserisce nei blocchi qui creati i vari parametri da lui stabiliti-->
+        <label for="example-text-input" class="col-2 col-form-label">Nome Test</label>
+        <div class="col-10">
+          <input class="form-control" name="nome" type="text" id="NomeTest">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Numero Immagini per Ogni Test</label>
+        <div class="col-10">
+          <input class="form-control" name="nome" type="text" id="ltest">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-search-input" class="col-2 col-form-label">Numero Immagini Neutre</label>
+        <div class="col-10">
+          <input class="form-control" name="cognome" type="text" id="nNeutre">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-email-input" class="col-2 col-form-label">Numero Ripetizioni per Ogni Immagine</label>
+        <div class="col-10">
+          <input class="form-control" name="eta" type="text" id="NumRipetizioni">
+        </div>
+      </div>
+      <!-- gruppi di immagini da selezionare -->
+      <div class="form-group row">
+        <!-- sono presenti dei pop che compaiono sulle lettere per specificarne il contenuto -->
+        <label for="example-email-input" class="col-5 col-form-label">Gruppi</label>
+        <div class="col-10">
+          <div class="col-md-1">
+            <label class="checkbox-inline">
+                        <input type="checkbox" id="groupA" role="button"  data-toggle="tooltip" title="Immagini Cruente"> A
+                      </label>
+          </div>
+          <div class="col-md-1">
+            <label class="checkbox-inline">
+                        <input type="checkbox" id="groupH" role="button"  data-toggle="tooltip" title="Immagini Tristi"> H
+                      </label>
+          </div>
+          <div class="col-md-1">
+            <label class="checkbox-inline">
+                        <input type="checkbox" id="groupN" role="button" data-toggle="tooltip" title="Immagini Neutre"> N
+                      </label>
+          </div>
+          <div class="col-md-1">
+            <label class="checkbox-inline">
+                        <input type="checkbox" id="groupP" role="button" data-toggle="tooltip" title="Immagini Piacevoli"> P
+                      </label>
+          </div>
+          <div class="col-md-1">
+            <label class="checkbox-inline">
+                        <input type="checkbox" id="groupS" role="button" data-toggle="tooltip" title="Ragni/Serpenti"> S
+                      </label>
+            <!--le caselle sopra riportate permettono di scegliere quali gruppi di immagini inserire nel test -->
+          </div>
+          <!-- script per la generazione dei pop-->
+          <script>
+            $(document).ready(function() {
+              $('[data-toggle="tooltip"]').tooltip();
+            });
+          </script>
+          <!-- fine script per la generazione dei pop-->
+        </div>
+      </div>
+      <div class="form-group row">
+        <!-- si passa alla decisione del timer per le equazioni matematiche-->
+        <!-- deve essere stabilito un tempo tale da rendere ampliamente fattibile la prima equazione e irrisolvibile la seconda -->
+        <label for="example-search-input" class="col-2 col-form-label">Durata Timer Equazioni [s]</label>
+        <div class="col-10">
+          <input class="form-control" name="cognome" type="text" id="timer">
+        </div>
+      </div>
+      <!--con i due br si lascia dello spazio tra le impostazioni e il tasto di fine -->
+      </br>
+      </br>
+      <p>
+        <a class="btn btn-lg btn-primary" href="loading.html" onclick="saveSettings()" role="button">Finish</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

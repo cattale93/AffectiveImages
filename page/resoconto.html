@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<!--Nella seguente pagina viene presentato un sesoconto finale del test, dove il progettista puo verificare i dati da lui analizzati-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Affective Image</title>
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body onload="resoconto()">
+  <br>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand">Affective Immage</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <h2></h2>
+      <!--qui iniziano le voci di test, vengono elencate tutte lke impostazioni stabilite dal progrttista-->
+      <p align="left">
+        <font style="color:#006699;" size="6">
+          <i><b>Il test si è concluso! Qui sotto un breve resoconto:<br> </b></i></font>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <font style="color:#006699;" size="4">
+              Nome Test: <br> N. img. per Test: <br> N. img. Neutre: <br> N. di ripet. per img.: <br> Gruppi Testati: <br> Durata Timer eq.: <br>
+            </font>
+          </div>
+          <div class="col-md-3"><b>
+            <font style="color:#009999;" size="4" id="Ntest">
+              </font><br>
+            <font style="color:#009999;" size="4" id="Imgpt">
+              </font><br>
+            <font style="color:#009999;" size="4" id="Imgn">
+              </font><br>
+            <font style="color:#009999;" size="4" id="Imgrip">
+              </font><br>
+            <font style="color:#009999;" size="4" id="gruppi">
+              </font><br>
+            <font style="color:#009999;" size="4" id="Ttimer">
+              </font><br>
+          </b></div>
+          <!--qui di seguito vengono stampati i valori salvati nel database-->
+          <div class="col-md-3">
+            <font style="color:#006699;" size="4">
+              N. test eseguiti: <br> N. img. TOT: <br> N. img. A: <br> N. img. H: <br> N. img. N: <br> N. img. P: <br> N. img. S: <br>
+            </font>
+          </div>
+          <div class="col-md-3"><b>
+            <font style="color:#009999;" size="4" id="Ntestese">
+              </font><br>
+            <font style="color:#009999;" size="4" id="ImgTOT">
+              </font><br>
+            <font style="color:#009999;" size="4" id="ImgA">
+              </font><br>
+            <font style="color:#009999;" size="4" id="ImgH">
+              </font><br>
+            <font style="color:#009999;" size="4" id="ImgN">
+              </font><br>
+            <font style="color:#009999;" size="4" id="ImgP">
+              </font><br>
+            <font style="color:#009999;" size="4" id="ImgS">
+              </font><br>
+          </b></div>
+
+
+        </div>
+        <div class="col-md-4"></div>
+        <br><br>
+        <p class="text-left">
+          <!-- bottoni per decidere se avanzare o tornare indietro con il test-->
+          <a class="btn btn-lg btn-primary" href="impostazioni.html" role="button">Next</a>
+        </p>
+    </div>
+  </div>
+</body>
+
+</html>

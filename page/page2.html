@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>AffectiveImmage</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Affective Immage</a>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <!-- da qui iniziano le voci da completare per procedere al test-->
+      <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Nome</label>
+        <div class="col-10">
+          <input class="form-control" name="nome" type="text" id="testoNome">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-search-input" class="col-2 col-form-label">Cognome</label>
+        <div class="col-10">
+          <input class="form-control" name="cognome" type="text" id="testoCognome">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-email-input" class="col-2 col-form-label">Età</label>
+        <div class="col-10">
+          <input class="form-control" name="eta" type="text" id="testoEta">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-email-input" class="col-5 col-form-label">Sesso</label>
+        <div class="col-10">
+          <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="testosesso1" value="M"> M
+          </label>
+          <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="testosesso2" value="F"> F
+          </label>
+        </div>
+      </div>
+      </br>
+      </br>
+      <p>
+        <!--una volta completato il tutto si può procedere, se imvece il soggetto non vuole lasciare il propri dati può tornare indietro-->
+        <a class="btn btn-lg btn-primary" href="page1.html" role="button">Back</a>
+        <a class="btn btn-lg btn-primary" href="page3.html" onClick="savePersonalData()" role="button">Start</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

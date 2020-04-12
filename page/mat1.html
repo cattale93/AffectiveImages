@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!--la sequente pagina presenta un' equazione da risolvere entro un certo tempo-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Affective Image</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/script.js"></script>
+</head>
+<!--viene richiamata la funzione che genera un espressione molto semplice in modo casuale -->
+<!-- questa espressione deve teoricamente essere risolta in modo rapido e facileper permettere di passare alla successiva -->
+
+<body onload="generaSemplice()">
+  <div class="container">
+    <div class="container-fluid">
+      <br>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+
+    </div>
+
+    <div class="jumbotron" 0>
+      <!-- titolo della pagina-->
+      <h2 class="text-center" <font face="Helvetica "> QUESITO MATEMATICO </font></h2> <br><br>
+      <!-- qui di sequito troviamo il blocco che forma il cronometro-->
+      <!-- questo blocco è formatto da due parti una consistenete nella cornice e una consistente dal timer che scorre -->
+      <div style="position:fixed; left:78%; top: 31%; transform: translate(-50%, -50%);">
+        <!--bordo del cronometro  -->
+        <img src="../img/Img_generali/orologio.gif" style="width:85%;height:85%;">
+      </div>
+
+      <p> Completare l'espressione inserendo il risultato nello spazio in bianco. </p>
+      <br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br> <br><br><br><br><br>
+      <a class="btn btn-lg btn-primary" onclick="savemat1()" href="mat2.html" role="button">Next</a>
+    </div>
+    <!--qui vinene richiamata la generazione dell'esporessione matematica   -->
+    <div style="position:fixed; left:76.3%; top: 32%; transform: translate(-50%, -50%);">
+      <p style="font-size:50px;" id="demo">
+      </p>
+
+      <script>
+        clock(1); // viene richiamato il timer
+      </script>
+    </div>
+    <!--i diue sopra riportati possono subire variazione di dimensione e/o posizione passando da un pc all'altro -->
+    <!--REGOLAZIONE POSIZIONE: per regolare la posizione dei vari elemetri basta modificare -->
+    <!--
+<div style="position:fixed; left:78%; top: 31%; transform: translate(-50%, -50%);">
+giocando con left e top si può regolatre la posizione a proprio piacimento
+-->
+    <div style="position:fixed; left:44%; top:53%; transform: translate(-50%, -50%);">
+      <img src="../img/Img_generali/rettangolomat.png" style="width:122%;height:100%;">
+    </div>
+    <!--BLOCCO IMMAGINE FUMETTO  -->
+    <div style="position:fixed; left:26%; top: 38%; transform: translate(-50%, -50%);">
+      <img src="../img/Img_generali/einstein_quesitomat.png" style="width:40%;height:40%;">
+    </div>
+    <div style="position:fixed; left:38%; top: 53%; transform: translate(-50%, -50%);" id="text"></div>
+  </div>
+  <div style="position:fixed; left:56%; top: 53%; transform: translate(-50%, -50%);">
+    <input class="form-control" id="rx" type="text"></input>
+    <!-- anche i blocchi qui riportati sono stati regolati con proecisione in base allo schermo origilale
+    REGOLAZIONE POSIZIONE: per regolare la posizione dei vari elemetri basta modificare left e top-->
+
+  </div><br>
+</body>
+
+</html>

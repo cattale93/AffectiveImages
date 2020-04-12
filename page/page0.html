@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!--indica il linguaggio utilizzato nel seguente file-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Affective Image</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- richiami alle librerie bootstrap-->
+  <script src="../js/script.js"></script>
+</head>
+
+<body onload="notifica()">
+  <div class="wrapper">
+    <!-- blocchi per levarie impostazioni di pagina-->
+    <div class="pie spinner"></div>
+    <div class="pie filler"></div>
+    <div class="mask"></div>
+  </div>
+  <div class="container">
+    <div class="container-fluid">
+      <br>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+    </div>
+    <div id="new" style="position:fixed; left:87%; top: 10%; transform: translate(-50%, -50%); ">
+      <!--impostazioni per determinare la posizione diuna immagine-->
+      <img src="../img/Img_generali/impostazioni.png" class="img-responsive" onclick="goto()" style="width:40%;height:40%;" role="button" />
+      <!--immagine impostazioni-->
+    </div>
+
+
+    <div class="jumbotron">
+      <img src="../img/Img_generali/Unitn.gif" alt="logo unitn" style="width:70%;height:70%;" />
+      <!--immagine logo università-->
+      <br><br><br>
+      <hr />
+      <br>
+      <h1 class="text-center" <font face="Helvetica "> AFFECTIVE IMAGE TEST</font></h1>
+      <br>
+      <hr />
+      <p><br><br>
+        <a class="btn btn-lg btn-primary" href="page1.html" role="button">Next</a>
+        <!-- pulsante per procedere-->
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

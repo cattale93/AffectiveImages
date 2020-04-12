@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!--spiega il linguaggio che si va ad usare nelseguente file-->
+
+<head>
+  <!--Nell head si mette tutto il codiche che non deve comparire a video-->
+  <meta charset="utf-8" />
+  <!--aggiunge i caratteri dell' alfabeto mancanti a quello standard, permette di inserire le lettere accentate-->
+  <title>Affective Image</title>
+  <!-- è il titolo del progetto-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!--sono i richiami alle librerie di boostrap,il quale permette ottenere effetti grafici migliori-->
+  <script src="../js/script.js"></script>
+  <!--Serve per fare un richiamo al file scrips.js il quale contiene il codice javascript per eseguire le funzioni-->
+</head>
+<!--in questo caso il file sript viene richiamato per far eseguire la funzione per caricameto delle immaginie per la parte di valutazione delle immagini -->
+
+<div class="container">
+  <!-- di seguito si trovano una serie di contenitori per dare i diversi effettigrafici-->
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    </div>
+  </div>
+
+  <div style="position:fixed; left:50%; top: 40%; transform: translate(-50%, -50%);">
+    <!--questo blocco permette di stabilire con estrema precisione dove posizionare l'immagine -->
+    <div id="A">
+      <!--viene richiamata la funzione per la generazione random delle diverse immagini -->
+      <div class="row">
+        <!--vengono generate le immagini dei gruppi ,precedentemente stabiliti nella pagina impostazioni,queste comparirnno al centro dello schermo con la posizione definita sopra -->
+        <script>
+          generaImmaginiRandom(1);
+        </script>
+      </div>
+    </div>
+  </div>
+  <div style="position:fixed; left:50%; top: 85%; transform: translate(-50%, -50%);">
+    <!-- si stabilisce dove andare a posizionare gli smile per la valutazione delle immagini-->
+    <div class="col-md-1"></div>
+    <!--vengono create delle colonne per stabilizzzare la posizione dei valutatori -->
+    <div class="col-md-1"> </div>
+    <!--le colonne con md-1 hanno la dimensione minima, cambiando il niumero si gioca sulla dimensione -->
+    <div class="col-md-2">
+      <!-- tutti i diversi smile vengolo posizionati all interno di una colonna in modo da garantire un margine tra esse-->
+      <img src="../img/Smile/S (1).jpg" class="img-responsive" alt="Responsive image" onclick="saveFaceResult(1)" style="width:70%;height:70%" role="button">
+    </div>
+    <!-- qui sopra vine richiamato il sprimo smile, di seguito tutti gli altri -->
+    <div class="col-md-2">
+      <img src="../img/Smile/S (2).jpg" class="img-responsive" alt="Responsive image" onclick="saveFaceResult(2)" style="width:70%;height:70%" role="button">
+    </div>
+    <div class="col-md-2">
+      <img src="../img/Smile/S (3).jpg" class="img-responsive" alt="Responsive image" onclick="saveFaceResult(3)" style="width:70%;height:70%" role="button">
+    </div>
+    <div class="col-md-2">
+      <img src="../img/Smile/S (4).jpg" class="img-responsive" alt="Responsive image" onclick="saveFaceResult(4)" style="width:70%;height:70%" role="button">
+    </div>
+    <div class="col-md-2" id="C">
+    </div>
+  </div>
+  <!--da qui inizia il blocco per la realizzazione della scala oper l'indice di gradimento -->
+  <div style="position:fixed; left:49%; top: 95%; transform: translate(-50%, -50%);">
+    <!-- blocco scala numeri -->
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(1)" class="btn btn-primary">1</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(2)" class="btn btn-primary">2</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(3)" class="btn btn-primary">3</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(4)" class="btn btn-primary">4</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(5)" class="btn btn-primary">5</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(6)" class="btn btn-primary">6</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(7)" class="btn btn-primary">7</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(8)" class="btn btn-primary">8</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(9)" class="btn btn-primary">9</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" onclick="saveValueResult(10)" class="btn btn-primary">10</button>
+      </div>
+      <!--sono stati creati 10 blocchetti contenenti dei numeri da 1 a 10 tramite i queli si va a valutare il gradimento dell'immagine -->
+    </div>
+  </div>
+  <!-- fine blocco scala numeri -->
+</div>
+<!-- fine blocco totale -->
+</body>
+<!--finisce il blocco del corpo -->
+
+</html>

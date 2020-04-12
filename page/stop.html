@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--la sequente pagina si presentauna volta scaduto il tempo delle qequazioni-->
+<!--in particolare questa appare quando termina la 2 equazione-->
+<html>
+<!--lo scopo di questa pagina è quello di demoralizzare il soggetto, farlo alterare, renderlo nervoso-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Affective Image</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script type="text/javascript"></script>
+  <!--il seguente blocco permette l'espansione dell' immagine di game ove una volta che ci si passa sopra con il
+cursore del mouse-->
+  <!--   FILE GROSSO GROSSO-->
+  <style type="text/css">
+    <!-- img.expando {
+      border: none;
+      vertical-align: top;
+    }
+  </style>
+  <script type="text/javascript" src="expando.js">
+  </script>
+  <!--   fine FILE GROSSO GROSSO-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="pie spinner"></div>
+    <div class="pie filler"></div>
+    <div class="mask"></div>
+  </div>
+  <div class="container">
+    <div class="container-fluid">
+      <br>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <br> <br> <br> <br> <br> <br> <br>
+      <br> <br> <br> <br> <br> <br> <br><br> <br><br>
+      <!--i blocchi seguenti generano 2 immagini-->
+      <div style="position:fixed; left:31%; top: 50%; transform: translate(-50%, -50%);">
+        <img src="../img/Img_generali/timeout.gif" style="width:40%;height:40%;">
+      </div>
+      <div style="position:fixed; left:41%; top: 56%; transform: translate(-50%, -50%);">
+        <img src="../img/Img_generali/boom.gif" style="width:30%;height:30%;">
+      </div>
+      <div style="position:fixed; left:60%; top: 35%; transform: translate(-50%, -50%);">
+        <img class="expando" border="0" src="../img/Img_generali/stop.png" style="width:85%;height:85%;">
+      </div>
+      <!--REGOLAZIONE POSIZIONE: per regolare la posizione dei vari elemetri basta modificare
+    <div style="position:fixed; left:78%; top: 31%; transform: translate(-50%, -50%);">
+    giocando con left e top si può regolatre la posizione a proprio piacimento-->
+      <br>
+      <!--viene creato un pannel di colore rosso dove vengono stamopate le istruzioni di
+        quel che è successo e di come procedere-->
+      <br>
+      <br>
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <p class="text-center" <font face="Helvetica "> IL TEMPO A TUA DISPOSIZIONE E' SCADUTO <br>premere next per proseguire. </p>
+        </div>
+      </div>
+      <br> <br>
+      <p>
+        <a class="btn btn-lg btn-primary" href="last.html" role="button">Next</a>
+        <!-- pulsante per procedere-->
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

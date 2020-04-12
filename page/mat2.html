@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!-- In questa pagina viene generato l'equazione complessa-->
+<!--questa equazione teoricamente non deve poter essere risolta, il tempo a disposizione non dovrebbe bastare-->
+<!--la pagina è strutturata in modo identico alla precedente, l'unica differenza consiste appunto0 nella
+gernerazione di un equazione più complessa-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Affective Image</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body onload="generaComplesso()">
+  <div class="container">
+    <div class="container-fluid">
+      <br>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+    </div>
+    <!--blocco conteiner-->
+    <div class="jumbotron">
+      <!--titolo-->
+      <h2 class="text-center" <font face="Helvetica "> QUESITO MATEMATICO </font></h2> <br><br>
+      <!--gif bordo cronometro-->
+      <div style="position:fixed; left:78%; top: 31%; transform: translate(-50%, -50%);">
+        <img src="../img/Img_generali/orologio.gif" style="width:85%;height:85%;">
+      </div>
+      <!--testo-->
+      <p> Completare l'espressione inserendo il risultato nello spazio in bianco. </p>
+      <br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br> <br><br><br><br><br>
+      <!--pulsante di avanzamento-->
+      <a class="btn btn-lg btn-primary" onclick="savemat2()" role="button">Next</a>
+    </div>
+    <!--timer-->
+    <div style="position:fixed; left:76.3%; top: 32%; transform: translate(-50%, -50%);">
+      <p style="font-size:50px;" id="demo">
+      </p>
+      <script>
+        clock(2);
+      </script>
+    </div>
+    <!--rettangolo di base dove vengono allocate le immagini-->
+    <div style="position:fixed; left:44%; top:53%; transform: translate(-50%, -50%);">
+      <img src="../img/Img_generali/rettangolomat.png" style="width:122%;height:100%;">
+    </div>
+    <!--BLOCCO IMMAGINE FUMETTO  -->
+    <div style="position:fixed; left:26%; top: 38%; transform: translate(-50%, -50%);">
+      <img src="../img/Img_generali/einstein_quesitomat.png" style="width:40%;height:40%;">
+    </div>
+    <!--espressione-->
+    <div style="position:fixed; left:38%; top: 53%; transform: translate(-50%, -50%);" id="text"></div>
+  </div>
+  <!--inserimento risultato-->
+  <div style="position:fixed; left:56%; top: 53%; transform: translate(-50%, -50%);">
+    <input class="form-control" id="rx" type="text"></input>
+  </div><br>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<!--la seguente è una pagina di caricamento fittizia, permette di caricare scaricare i dati dal database prima dell' avvio del test -->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Affective Image</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- richiami alle librerie bootstrap-->
+  <script src="../js/script.js"></script>
+  <!-- richiamo al file javascript -->
+  <script>
+    // qui si fanno i richiami a due funzioni del file sript
+    loadState();
+  </script>
+  <script>
+    loadTest();
+  </script>
+</head>
+
+<body onload="setTimeout(gotostart, 1000)">
+  <!-- si lascia visualizzare la pagina giusto il tempo da permettere alla funzione di eseguire il ciclo -->
+  <div class="wrapper">
+    <!-- blocchi per levarie impostazioni di pagina-->
+    <div class="pie spinner"></div>
+    <div class="pie filler"></div>
+    <div class="mask"></div>
+  </div>
+  <div class="container">
+    <div class="container-fluid">
+      <br>
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+    </div>
+
+
+
+    <div class="jumbotron">
+      <!--all' interno del conteiner centrale viene allocata un gif per simulare il fittizio carimacemto -->
+      <br><br><br>
+      <div class="text-center">
+        <!--GIF CARICAMENTO-->
+        <!-- la gif è posizionata centralmentenello schermo la dimensione può essere regolata modificando le percentuali -->
+        <img src="../img/Img_generali/load.gif" style="width:20%;height:20%;" />
+      </div>
+      <br><br><br>
+      <!--viene lasciato dello spazio tra l'immagine e la scritta loading -->
+      <h2 class="text-center" face=”Impact”><b> LOADING </b>
+                <h2/>
+                <br><br>
+        </div>
+    </div>
+</body>
+
+</html>
